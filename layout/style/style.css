@@ -1,0 +1,78 @@
+@font-face {
+    font-family: EuclidCircularALight;
+    src: url('../fonts/euclid_circular_a/EuclidCircularA-Light.woff');
+}
+
+@font-face {
+    font-family: EuclidCircularABold;
+    src: url('../fonts/euclid_circular_a/EuclidCircularA-Bold.woff');
+}
+
+@font-face {
+    font-family: EuclidCircularASemiBold;
+    src: url('../fonts/euclid_circular_a/EuclidCircularA-SemiBold.woff');
+}
+
+@font-face {
+    font-family: EuclidCircularAMedium;
+    src: url('../fonts/euclid_circular_a/EuclidCircularA-Medium.woff');
+}
+
+
+*, html {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    color: var(--color-text);
+    transition: .3s;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: EuclidCircularALight, sans-serif;
+}
+
+@media (max-width: 1000px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+:root {
+    --bg_header: #CBECFF;
+    --padding_side: 6rem;
+    --color-text-additional: #0962E8;
+    --color-text: #29374E;
+    --bg-icon: #EFF9FF;
+}
+
+.body {
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 100vw;
+    min-width: 370px;
+    overflow-x: hidden;
+}
+
+.add-color-text {
+    color: var(--color-text-additional);
+}
+
+.action-button {
+    font-size: 1.8rem;
+    padding: 1.5rem 2.5rem;
+    color: white;
+    background-color: var(--color-text-additional);
+    border-radius: 1.2rem;
+    font-family: EuclidCircularAMedium;
+    cursor: pointer;
+}
+
+.action-button:hover {
+    opacity: 0.8;
+}
